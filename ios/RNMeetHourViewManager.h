@@ -1,5 +1,5 @@
 #import <React/RCTViewManager.h>
-#import <MeetHour/MeetHourViewDelegate.h>
+#import <MeetHourSDK/MeetHourViewDelegate.h>
 
 @interface RNMeetHourViewManager : RCTViewManager <MeetHourViewDelegate>
 @end

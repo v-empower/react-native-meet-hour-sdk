@@ -1,6 +1,6 @@
 #import "RNMeetHourViewManager.h"
 #import "RNMeetHourView.h"
-#import <MeetHour/MeetHourUserInfo.h>
+#import <MeetHourSDK/MeetHourUserInfo.h>
 
 @implementation RNMeetHourViewManager{
     RNMeetHourView *meetHourView;

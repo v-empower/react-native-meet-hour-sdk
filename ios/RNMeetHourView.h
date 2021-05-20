@@ -1,4 +1,4 @@
-#import <MeetHour/MeetHour.h>
+#import <MeetHourSDK/MeetHourSDK.h>
 
 #import <React/RCTComponent.h>
 
