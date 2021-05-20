@@ -74,7 +74,7 @@ class VideoCall extends React.Component {
 export default VideoCall;
 ```
 
-You can also check the [ExampleApp](https://github.com/skrafft/react-native-meet-hour-sdk/tree/master/ExampleApp)
+You can also check the [ExampleApp](https://github.com/v-empower/MeetHour-MobileSDKs/reactnative/MeetHourSDKTest)
 
 ### Events
 
