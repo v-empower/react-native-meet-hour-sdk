@@ -1,0 +1,34 @@
+{
+  "name": "react-native-meet-hour-sdk",
+  "description": "Meet Hour SDK wrapper for React Native.",
+  "version": "1.0.0",
+  "author": {
+    "name": "MeetHour, LLC",
+    "email": "hello@meethour.io"
+  },
+  "contributors": [],
+  "homepage": "https://github.com/v-empower/react-native-meet-hour-sdk",
+  "bugs": {
+    "url": "https://github.com/v-empower/react-native-meet-hour-sdk/issues"
+  },
+  "dependencies": {},
+  "keywords": [
+    "meethour",
+    "meet hour",
+    "video",
+    "chat",
+    "call",
+    "voice",
+    "native",
+    "react",
+    "react-native",
+    "react-native-component"
+  ],
+  "license": "Apache-2.0",
+  "main": "index",
+  "nativePackage": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/v-empower/react-native-meet-hour-sdk.git"
+  }
+}
