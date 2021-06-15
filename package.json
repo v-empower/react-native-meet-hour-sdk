@@ -1,17 +1,13 @@
 {
   "name": "react-native-meet-hour-sdk",
   "description": "Meet Hour SDK wrapper for React Native.",
-  "version": "1.0.0",
-  "author": {
-    "name": "MeetHour, LLC",
-    "email": "hello@meethour.io"
-  },
+  "version": "1.0.1",
+  "author": "MeetHour, LLC <hello@meethour.io>",
   "contributors": [],
   "homepage": "https://github.com/v-empower/react-native-meet-hour-sdk",
   "bugs": {
     "url": "https://github.com/v-empower/react-native-meet-hour-sdk/issues"
   },
-  "dependencies": {},
   "keywords": [
     "meethour",
     "meet hour",
@@ -29,6 +25,9 @@
   "nativePackage": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/v-empower/react-native-meet-hour-sdk.git"
+    "url": "git+https://github.com/v-empower/react-native-meet-hour-sdk.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
