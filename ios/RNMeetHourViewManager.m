@@ -48,17 +48,18 @@ RCT_EXPORT_METHOD(join_meethour:(NSDictionary *)userInfo)
     BOOL pipModeEnabled = true;
 
 
-    MeetHourUserInfo * _userInfo = [[MeetHourUserInfo alloc] init];
+    MeetHourUserInfo * _userDetails = [[MeetHourUserInfo alloc] init];
     if (userInfo != NULL) {
-      if (userInfo[@"displayName"] != NULL) {
-        _userInfo.displayName = userInfo[@"displayName"];
+      if (userInfo[@"userInfo"][@"displayName"] != NULL) {
+          NSLog(@"%@", userInfo[@"userInfo"][@"displayName"]);
+        _userDetails.displayName = userInfo[@"userInfo"][@"displayName"];
       }
-      if (userInfo[@"email"] != NULL) {
-        _userInfo.email = userInfo[@"email"];
+      if (userInfo[@"userInfo"][@"email"] != NULL) {
+        _userDetails.email = userInfo[@"userInfo"][@"email"];
       }
-      if (userInfo[@"avatar"] != NULL) {
-        NSURL *url = [NSURL URLWithString:[userInfo[@"avatar"] stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]]];
-        _userInfo.avatar = url;
+      if (userInfo[@"userInfo"][@"avatar"] != NULL) {
+        NSURL *url = [NSURL URLWithString:[userInfo[@"userInfo"][@"avatar"] stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]]];
+        _userDetails.avatar = url;
       }
       if (userInfo[@"roomName"] != NULL){
         roomName = userInfo[@"roomName"];
@@ -117,7 +118,7 @@ RCT_EXPORT_METHOD(join_meethour:(NSDictionary *)userInfo)
         builder.serverURL = [NSURL URLWithString:serverURL];
         builder.room = roomName;
         builder.subject = subject;
-        builder.userInfo = _userInfo;
+        builder.userInfo = _userDetails;
         builder.audioMuted = audioMuted;
         builder.videoMuted = videoMuted;
         [builder setFeatureFlag:@"chat.enabled" withBoolean:chatEnabled];
