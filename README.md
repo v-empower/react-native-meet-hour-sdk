@@ -5,6 +5,13 @@ React native wrapper for Meet Hour SDK
 
 `npm install react-native-meet-hour-sdk --save` 
 
+For stable SDK, please use version ```1.0.3```.
+
+## Screenshot
+
+![IMG_E76D8A0271A6-1](https://user-images.githubusercontent.com/29202505/123973768-ac7dfa80-d9d9-11eb-9b71-6ff8b3e4a5fc.jpeg)
+
+
 If you are using React-Native < 0.60, you should use a version < 2.0.0.  
 For versions higher than 2.0.0, you need to add the following piece of code in your ```metro.config.js``` file to avoid conflicts between react-native-meet-hour-sdk and react-native in metro bundler.
 
