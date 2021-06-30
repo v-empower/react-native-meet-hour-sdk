@@ -5,6 +5,8 @@ React native wrapper for Meet Hour SDK
 
 `npm install react-native-meet-hour-sdk --save` 
 
+For stable version MeetHour, Please use 1.0.3 version.
+
 If you are using React-Native < 0.60, you should use a version < 2.0.0.  
 For versions higher than 2.0.0, you need to add the following piece of code in your ```metro.config.js``` file to avoid conflicts between react-native-meet-hour-sdk and react-native in metro bundler.
 
@@ -130,7 +132,7 @@ You can add listeners for the following events:
 contains `<string>voip</string>`
 
 ## iOS Install for RN >= 0.60
-1.) Modify your Podfile to have ```platform :ios, '10.0'``` and execute ```pod install```  
+1.) Modify your Podfile to have ```platform :ios, '12.1'``` and execute ```pod install```  
 2.) In Xcode, under Build setting set Enable Bitcode to No  
 
 ## iOS Install for RN < 0.60
