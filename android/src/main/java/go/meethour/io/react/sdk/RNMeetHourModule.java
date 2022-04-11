@@ -293,4 +293,13 @@ public class RNMeetHourModule extends ReactContextBaseJavaModule {
             }
         });
     }
+
+    @Override
+    protected void onUserLeaveHint() {
+        MeetHourView view = mMeetHourViewReference.getMeetHourView();
+
+        if (view != null) {
+            view.enterPictureInPicture();
+        }
+    }
 }
