@@ -294,9 +294,9 @@ public class RNMeetHourModule extends ReactContextBaseJavaModule {
         });
     }
 
-    @Override
+    @ReactMethod
     protected void onUserLeaveHint() {
-        MeetHourView view = mMeetHourViewReference.getMeetHourView();
+        RNMeetHourView view = mMeetHourViewReference.getMeetHourView();
 
         if (view != null) {
             view.enterPictureInPicture();

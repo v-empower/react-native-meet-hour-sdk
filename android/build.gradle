@@ -44,7 +44,7 @@ repositories {
 }
 
 dependencies {
-    implementation ('go.meethour.io.react:meet-hour-sdk:3.5.4') {
+    implementation ('go.meethour.io.react:meet-hour-sdk:3.5.5') {
       transitive = true
     }
 }
