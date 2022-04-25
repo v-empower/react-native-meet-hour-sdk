@@ -48,6 +48,7 @@ public class RNMeetHourModule extends ReactContextBaseJavaModule {
 
             String roomName = String.valueOf(Math.random());
             String subject = "";
+            String token = "";
             boolean audioMuted = false;
             boolean videoMuted = false;
             boolean chatEnabled = true;
@@ -94,6 +95,10 @@ public class RNMeetHourModule extends ReactContextBaseJavaModule {
 
                 if (userInfo.hasKey("roomName") && userInfo.getString("roomName") != null) {
                     roomName = userInfo.getString("roomName");
+                }
+
+                if (userInfo.hasKey("token") && userInfo.getString("token") != null) {
+                    token = userInfo.getString("token");
                 }
 
                 if (userInfo.hasKey("subject") && userInfo.getString("subject") != null) {
@@ -198,6 +203,7 @@ public class RNMeetHourModule extends ReactContextBaseJavaModule {
                     .setRoom(roomName)
                     .setSubject(subject)
                     .setUserInfo(_userInfo)
+                    .setToken(token)
                     .setFeatureFlag("chat.enabled", chatEnabled)
                     .setFeatureFlag("add-people.enabled", addPeopleEnabled)
                     .setFeatureFlag("invite.enabled", inviteEnabled)

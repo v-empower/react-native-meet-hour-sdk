@@ -30,6 +30,7 @@ RCT_EXPORT_METHOD(join_meethour:(NSDictionary *)userInfo)
 
     NSString *roomName = @"";
     NSString *subject = @"";
+    NSString *token = @"";
     NSString *serverURL = @"";
 
     BOOL audioMuted = false;
@@ -63,6 +64,9 @@ RCT_EXPORT_METHOD(join_meethour:(NSDictionary *)userInfo)
       }
       if (userInfo[@"roomName"] != NULL){
         roomName = userInfo[@"roomName"];
+      }
+      if (userInfo[@"token"] != NULL){
+        token = userInfo[@"token"];
       }
       if (userInfo[@"subject"] != NULL){
         subject = userInfo[@"subject"];
@@ -118,6 +122,7 @@ RCT_EXPORT_METHOD(join_meethour:(NSDictionary *)userInfo)
         builder.serverURL = [NSURL URLWithString:serverURL];
         builder.room = roomName;
         builder.subject = subject;
+        builder.token = token;
         builder.userInfo = _userDetails;
         builder.audioMuted = audioMuted;
         builder.videoMuted = videoMuted;
