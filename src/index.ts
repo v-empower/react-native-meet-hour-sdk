@@ -3,8 +3,7 @@ import type { MeetHourType, MeetHourViewType } from './types';
 
 const { MeetHour } = NativeModules;
 
-const MeetHourView: MeetHourViewType =
-  requireNativeComponent('MeetHourView');
+const MeetHourView: MeetHourViewType = requireNativeComponent('MeetHourView');
 
 export { MeetHourView };
 
