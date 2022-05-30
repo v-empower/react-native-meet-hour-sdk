@@ -147,4 +147,9 @@ public class MeetHourModule extends ReactContextBaseJavaModule {
 
     LocalBroadcastManager.getInstance(getReactApplicationContext()).registerReceiver(this.onConferenceTerminatedReceiver, intentFilter);
   }
+
+  @Override    
+  public boolean canOverrideExistingModule() {        
+    return true;    
+  }
 }
