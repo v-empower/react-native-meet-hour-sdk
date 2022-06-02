@@ -36,19 +36,19 @@ struct MeetHourUtil {
 
       // Set built-in config overrides
       if let subject = options["subject"] as? String {
-        builder.setSubject(subject)
+        builder.subject = subject
       }
 
       if let audioOnly = options["audioOnly"] as? Bool {
-        builder.setAudioOnly(audioOnly)
+        builder.audioOnly = audioOnly
       }
 
       if let audioMuted = options["audioMuted"] as? Bool {
-        builder.setAudioMuted(audioMuted)
+        builder.audioMuted = audioMuted
       }
 
       if let videoMuted = options["videoMuted"] as? Bool {
-        builder.setVideoMuted(videoMuted)
+        builder.videoMuted = videoMuted
       }
         
       // Set the feature flags
