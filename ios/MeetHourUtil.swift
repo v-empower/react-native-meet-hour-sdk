@@ -50,12 +50,7 @@ struct MeetHourUtil {
       if let videoMuted = options["videoMuted"] as? Bool {
         builder.videoMuted = videoMuted
       }
-        
-      // Set the feature flags
-      let featureFlags = options.value(forKey: "featureFlags") as! NSDictionary
-      for (flag, value) in featureFlags {
-        builder.setFeatureFlag(flag as! String, withValue: value)
-      }
+
     }
   }
 }
