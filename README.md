@@ -44,10 +44,10 @@ const conferenceOptions = {
     displayName: 'John',
     email: 'example@test.com',
     avatar: 'https://picsum.photos/200',
-  },
-  featureFlags: {
-    'live-streaming.enabled': false,
-  },
+  }
+  token: '',
+  audioMuted: false,
+  videoMuted: false
 };
 
 function App() {
