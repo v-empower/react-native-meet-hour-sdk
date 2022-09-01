@@ -387,5 +387,6 @@ implementation(project(':react-native-meet-hour-sdk')) {
 //     exclude group: 'com.facebook.react',module:'react-native-webview'
 //     exclude group: 'com.facebook.react',module:'react-native-linear-gradient'
 //     exclude group: 'com.facebook.react',module:'react-native-sound'
+//     exclude group: 'com.facebook.react',module:'react-native-add-calendar-event'
 }
 ```
