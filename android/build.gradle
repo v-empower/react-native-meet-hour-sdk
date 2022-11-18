@@ -18,11 +18,11 @@ def safeExtGet(prop, fallback) {
 }
 
 android {
-    compileSdkVersion safeExtGet('MeetHour_compileSdkVersion', 29)
+    compileSdkVersion safeExtGet('MeetHour_compileSdkVersion', 31)
     buildToolsVersion safeExtGet('MeetHour_buildToolsVersion', '29.0.2')
     defaultConfig {
         minSdkVersion safeExtGet('MeetHour_minSdkVersion', 23)
-        targetSdkVersion safeExtGet('MeetHour_targetSdkVersion', 29)
+        targetSdkVersion safeExtGet('MeetHour_targetSdkVersion', 31)
         versionCode 1
         versionName "1.0"
 
@@ -58,7 +58,7 @@ dependencies {
     //noinspection GradleDynamicVersion
     implementation "com.facebook.react:react-native:+"  // From node_modules
 
-    implementation ('go.meethour.io.react:meet-hour-sdk:4.1.3') {
+    implementation ('go.meethour.io.react:meet-hour-sdk:4.1.4') {
         transitive = true
     }
 }
