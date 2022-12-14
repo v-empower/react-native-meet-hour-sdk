@@ -46,6 +46,7 @@ const conferenceOptions = {
     avatar: 'https://picsum.photos/200',
   }
   token: '',
+  pcode: '',
   audioMuted: false,
   videoMuted: false
 };
@@ -310,7 +311,8 @@ buildscript {
 | ------------ | --------- | ------------------- | --------------------------------------------------------------------------------------------------------------- |
 | room         | string    | required            | Room name for Meet Hour                                                                                        |
 | serverUrl    | string    | https://meethour.io | Valid server URL                                                                                                |
-| token        | string    | ""                  | JWT token                                                                                                       |
+| token        | string    | ""                  | JWT token  
+| pcode        | string    | ""                  | Password of meeting to be passed dynamically                                                                    |
 | subject      | string    | ""                  | Conference subject (will change the global subject for all participants)                                        |
 | audioOnly    | boolean   | false               | Controls whether the participant will join the conference in audio-only mode (no video is sent or recieved)     |
 | audioMuted   | boolean   | false               | Controls whether the participant will join the conference with the microphone muted                             |

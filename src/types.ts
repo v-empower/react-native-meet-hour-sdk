@@ -12,6 +12,7 @@ export interface MeetHourConferenceOptions {
   serverUrl?: string;
   userInfo?: MeetHourUserInfo;
   token?: string;
+  pcode?: string;
   subject?: string;
   audioOnly?: boolean;
   audioMuted?: boolean;

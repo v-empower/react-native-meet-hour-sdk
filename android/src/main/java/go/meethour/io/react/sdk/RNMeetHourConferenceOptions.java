@@ -10,6 +10,7 @@ public class RNMeetHourConferenceOptions implements Parcelable {
   private URL serverURL;
   private String room;
   private String token;
+  private String pcode;
   private Bundle config;
   private Bundle featureFlags;
   private RNMeetHourUserInfo userInfo;
@@ -26,6 +27,10 @@ public class RNMeetHourConferenceOptions implements Parcelable {
     return token;
   }
 
+  public String getPcode() {
+    return pcode;
+  }
+
   public Bundle getFeatureFlags() {
     return featureFlags;
   }
@@ -38,6 +43,7 @@ public class RNMeetHourConferenceOptions implements Parcelable {
     private URL serverURL;
     private String room;
     private String token;
+    private String pcode;
 
     private Bundle config;
     private Bundle featureFlags;
@@ -69,6 +75,12 @@ public class RNMeetHourConferenceOptions implements Parcelable {
 
     public Builder setToken(String token) {
       this.token = token;
+
+      return this;
+    }
+
+    public Builder setPcode(String pcode) {
+      this.pcode = pcode;
 
       return this;
     }
@@ -151,6 +163,7 @@ public class RNMeetHourConferenceOptions implements Parcelable {
       options.serverURL = this.serverURL;
       options.room = this.room;
       options.token = this.token;
+      options.pcode = this.pcode;
       options.config = this.config;
       options.featureFlags = this.featureFlags;
       options.userInfo = this.userInfo;
@@ -166,6 +179,7 @@ public class RNMeetHourConferenceOptions implements Parcelable {
     serverURL = (URL) in.readSerializable();
     room = in.readString();
     token = in.readString();
+    pcode = in.readString();
     config = in.readBundle();
     featureFlags = in.readBundle();
     userInfo = new RNMeetHourUserInfo(in.readBundle());
@@ -197,6 +211,10 @@ public class RNMeetHourConferenceOptions implements Parcelable {
       urlProps.putString("jwt", token);
     }
 
+    if (pcode != null) {
+      urlProps.putString("pcode", pcode);
+    }
+
     if (userInfo != null) {
       props.putBundle("userInfo", userInfo.asBundle());
     }
@@ -224,6 +242,7 @@ public class RNMeetHourConferenceOptions implements Parcelable {
     dest.writeSerializable(serverURL);
     dest.writeString(room);
     dest.writeString(token);
+    dest.writeString(pcode);
     dest.writeBundle(config);
     dest.writeBundle(featureFlags);
     dest.writeBundle(userInfo != null ? userInfo.asBundle() : new Bundle());

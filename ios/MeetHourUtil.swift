@@ -34,6 +34,10 @@ struct MeetHourUtil {
         builder.token = token
       }
 
+      if let pcode = options["pcode"] as? String {
+        builder.pcode = pcode
+      }
+
       // Set built-in config overrides
       if let subject = options["subject"] as? String {
         builder.subject = subject

@@ -93,6 +93,10 @@ public class MeetHourModule extends ReactContextBaseJavaModule {
       builder.setToken(options.getString("token"));
     }
 
+    if (options.hasKey("pcode")) {
+      builder.setPcode(options.getString("pcode"));
+    }
+
     // Set built-in config overrides
     if (options.hasKey("subject")) {
       builder.setSubject(options.getString("subject"));
