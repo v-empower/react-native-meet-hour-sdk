@@ -12,7 +12,7 @@ https://www.npmjs.com/package/react-native-meet-hour-sdk
 
 ```
 
-Example Project is here - https://github.com/v-empower/MeetHour-Web-MobileSDKs/tree/react-native-api-example-setup/Mobile/ReactNative
+Example Project is here - https://github.com/v-empower/MeetHour-Web-MobileSDKs/tree/master/Mobile/ReactNative
 
 ### Steps to Use Meet Hour React Native SDK Example
 
