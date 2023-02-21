@@ -1,6 +1,6 @@
 {
   "name": "react-native-meet-hour-sdk",
-  "description": "Meet Hour SDK wrapper for React Native.",
+  "description": "Meet Hour SDK for React Native.",
   "version": "3.0.18",
   "author": "MeetHour, LLC <hello@meethour.io>",
   "contributors": [],
