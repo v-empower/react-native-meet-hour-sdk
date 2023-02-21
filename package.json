@@ -1,7 +1,7 @@
 {
   "name": "react-native-meet-hour-sdk",
-  "description": "Meet Hour SDK wrapper for React Native.",
-  "version": "3.0.17",
+  "description": "Meet Hour SDK for React Native.",
+  "version": "3.0.18",
   "author": "MeetHour, LLC <hello@meethour.io>",
   "contributors": [],
   "homepage": "https://github.com/v-empower/react-native-meet-hour-sdk",
@@ -31,6 +31,7 @@
     "test": "jest",
     "typescript": "tsc --noEmit",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
+    "lint-fix": "eslint \"**/*.{js,ts,tsx}\" --fix",
     "prepare": "bob build",
     "release": "release-it",
     "pods": "pod-install --quiet",
@@ -144,5 +145,7 @@
       ]
     ]
   },
-  "dependencies": {}
+  "dependencies": {
+    "axios": "^1.2.2"
+  }
 }
