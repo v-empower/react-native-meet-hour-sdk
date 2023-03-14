@@ -103,6 +103,18 @@ public class RNMeetHourConferenceOptions implements Parcelable {
       return this;
     }
 
+    public Builder setPrejoinPageEnabled(boolean prejoinPageEnabled) {
+      setConfigOverride("prejoinPageEnabled", prejoinPageEnabled);
+
+      return this;
+    }
+
+    public Builder setDisableInviteFunctions(boolean disableInviteFunctions) {
+      setConfigOverride("disableInviteFunctions", disableInviteFunctions);
+
+      return this;
+    }
+
     public Builder setFeatureFlag(String flag, boolean value) {
       this.featureFlags.putBoolean(flag, value);
 

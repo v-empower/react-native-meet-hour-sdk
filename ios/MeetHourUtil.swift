@@ -55,6 +55,14 @@ struct MeetHourUtil {
         builder.videoMuted = videoMuted
       }
 
+      if let prejoinPageEnabled = options["prejoinPageEnabled"] as? Bool {
+        builder.prejoinPageEnabled = prejoinPageEnabled
+      }
+
+      if let disableInviteFunctions = options["disableInviteFunctions"] as? Bool {
+        builder.disableInviteFunctions = disableInviteFunctions
+      }
+
     }
   }
 }

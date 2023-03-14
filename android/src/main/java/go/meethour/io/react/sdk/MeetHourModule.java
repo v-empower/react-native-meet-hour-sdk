@@ -114,6 +114,14 @@ public class MeetHourModule extends ReactContextBaseJavaModule {
       builder.setVideoMuted(options.getBoolean("videoMuted"));
     }
 
+    if (options.hasKey("prejoinPageEnabled")) {
+      builder.setPrejoinPageEnabled(options.getBoolean("prejoinPageEnabled"));
+    }
+
+    if (options.hasKey("disableInviteFunctions")) {
+      builder.setDisableInviteFunctions(options.getBoolean("disableInviteFunctions"));
+    }
+
     // Set the feature flags
     if (options.hasKey("featureFlags")) {
       ReadableMap featureFlags = options.getMap("featureFlags");
