@@ -668,6 +668,13 @@ buildscript {
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
       </activity>
+      <provider
+        android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider"
+        android:authorities="${applicationId}.fileprovider"
+        android:enabled="false"
+        android:exported="true"
+        tools:replace="android:authorities,android:exported">
+      </provider>
     </application>
 </manifest>
 ```
