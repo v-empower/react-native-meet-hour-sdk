@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-import { API_VERSION, GRANT_TYPE } from '../constants';
+import { API_BASE_URL, API_VERSION, GRANT_TYPE } from '../constants';
 import type AddContactType from '../types/AddContactType';
 import type ContactsType from '../types/ContactsType';
 import type EditContactType from '../types/EditContactType';
@@ -88,7 +88,7 @@ const substitutePathParameter = (
  * ApiServices Class.
  */
 class ApiServices {
-  private static BASE_URL = 'https://api.meethour.io';
+  private static BASE_URL = API_BASE_URL ?? 'https://api.meethour.io';
 
   private static getHeaders = (token: string) => {
     return {
