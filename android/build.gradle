@@ -58,7 +58,8 @@ dependencies {
     //noinspection GradleDynamicVersion
     implementation "com.facebook.react:react-native:+"  // From node_modules
 
-    implementation ('go.meethour.io.react:meet-hour-sdk:4.5.5') {
+    implementation ('go.meethour.io.react:meet-hour-sdk:4.6.2') {
         transitive = true
     }
 }
+    
