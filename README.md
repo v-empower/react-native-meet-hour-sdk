@@ -5,7 +5,7 @@ Meet Hour Example project for React Native with APIs
 [Meet Hour - HD Quality free video conference solution](https://meethour.io)
 Meet Hour offers HD video conference solution with End to End Encrypted and many other features such as lobby mode, Donor box & Click&Pledge Connect for fundraising, Video call recording, Youtube Live Stream etc.
 
-### NPM package (Latest version - 3.0.44)
+### NPM package (Latest version - 3.0.45)
 
 ```
 https://www.npmjs.com/package/react-native-meet-hour-sdk
@@ -390,6 +390,7 @@ const conferenceOptions = {
   audioMuted: false,
   videoMuted: false,
   prejoinPageEnabled: false, // Make it true to Skip PrejoinPage
+  brandedURLForInvite: 'https://your.branded.url', // Setup your branded URL
   disableInviteFunctions: true, // To disable invite functions in Mobile SDK.
 };
 
@@ -893,6 +894,7 @@ buildscript {
 | audioMuted   | boolean   | false               | Controls whether the participant will join the conference with the microphone muted                             |
 | videoMuted   | boolean   | false               | Controls whether the participant will join the conference with the camera muted                                 |
 | prejoinPageEnabled   | boolean   | true        |  Make it true to Skip PrejoinPage  
+| brandedURLForInvite   | string   | ''        |  Provide your branded URL 
 | disableInviteFunctions | boolean   | true      |  To disable invite functions in Mobile SDK 
 | userInfo     | object    | {}                  | Object that contains information about the participant starting the meeting. See [UserInfo](#userinfo)          |
 | featureFlags | object    | {}                  | Object that contains information about which feature flags should be set. See below for more info.              |

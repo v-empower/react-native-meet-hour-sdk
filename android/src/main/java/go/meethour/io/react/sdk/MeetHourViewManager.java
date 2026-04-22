@@ -129,7 +129,7 @@ public class MeetHourViewManager extends SimpleViewManager<RNMeetHourView> {
     if (options.hasKey("audioMuted")) {
       builder.setAudioMuted(options.getBoolean("audioMuted"));
     }
-    
+
     if (options.hasKey("videoMuted")) {
       builder.setVideoMuted(options.getBoolean("videoMuted"));
     }
@@ -137,6 +137,10 @@ public class MeetHourViewManager extends SimpleViewManager<RNMeetHourView> {
     if (options.hasKey("prejoinPageEnabled")) {
       builder.setPrejoinPageEnabled(options.getBoolean("prejoinPageEnabled"));
     }
+
+     if (options.hasKey("brandedURLForInvite")) {
+       builder.setBrandedURLForInvite(options.getString("brandedURLForInvite"));
+     }
 
     if (options.hasKey("disableInviteFunctions")) {
       builder.setDisableInviteFunctions(options.getBoolean("disableInviteFunctions"));

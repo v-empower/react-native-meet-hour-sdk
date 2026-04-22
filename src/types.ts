@@ -17,6 +17,7 @@ export interface MeetHourConferenceOptions {
   audioOnly?: boolean;
   audioMuted?: boolean;
   prejoinPageEnabled?: boolean;
+  // brandedURLForInvite?: string;
   videoMuted?: boolean;
   disableInviteFunctions?: boolean;
   featureFlags?: { [key: string]: boolean };
