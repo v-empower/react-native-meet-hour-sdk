@@ -59,6 +59,10 @@ struct MeetHourUtil {
         builder.prejoinPageEnabled = prejoinPageEnabled
       }
 
+      if let brandedURLForInvite = options["brandedURLForInvite"] as? String {
+        builder.brandedURLForInvite = brandedURLForInvite
+      }
+
       if let disableInviteFunctions = options["disableInviteFunctions"] as? Bool {
         builder.disableInviteFunctions = disableInviteFunctions
       }

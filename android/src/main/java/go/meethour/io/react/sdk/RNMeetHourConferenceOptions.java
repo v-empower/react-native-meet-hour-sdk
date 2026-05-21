@@ -109,6 +109,12 @@ public class RNMeetHourConferenceOptions implements Parcelable {
       return this;
     }
 
+     public Builder setBrandedURLForInvite(String brandedURLForInvite) {
+       setConfigOverride("brandedURLForInvite", brandedURLForInvite);
+
+       return this;
+     }
+
     public Builder setDisableInviteFunctions(boolean disableInviteFunctions) {
       setConfigOverride("disableInviteFunctions", disableInviteFunctions);
 
