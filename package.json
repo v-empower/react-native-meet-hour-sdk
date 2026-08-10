@@ -1,7 +1,7 @@
 {
   "name": "react-native-meet-hour-sdk",
   "description": "Meet Hour SDK for React Native.",
-  "version": "3.0.45",
+  "version": "3.0.46",
   "author": "MeetHour, LLC <hello@meethour.io>",
   "contributors": [],
   "homepage": "https://github.com/v-empower/react-native-meet-hour-sdk",
@@ -65,7 +65,23 @@
   },
   "peerDependencies": {
     "react": "*",
-    "react-native": "*"
+    "react-native": "*",
+    "@react-native-async-storage/async-storage": ">=3.1.1",
+    "@react-native-clipboard/clipboard": ">=1.16.3",
+    "@react-native-community/netinfo": ">=12.0.1",
+    "@react-native-google-signin/google-signin": ">=16.1.4",
+    "react-native-add-calendar-event": ">=5.0.0",
+    "react-native-device-info": ">=15.0.2",
+    "react-native-gesture-handler": ">=2.31.0",
+    "react-native-image-picker": ">=8.2.1",
+    "react-native-pager-view": ">=8.0.0",
+    "react-native-reanimated": "4.3.x",
+    "react-native-safe-area-context": ">=5.7.0",
+    "react-native-screens": ">=4.24.0",
+    "react-native-svg": ">=15.15.5",
+    "react-native-video": ">=6.19.1",
+    "react-native-webview": ">=13.16.1",
+    "react-native-worklets": "0.8.x"
   },
   "jest": {
     "preset": "react-native",
