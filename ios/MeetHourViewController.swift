@@ -44,7 +44,14 @@ extension MeetHourViewController: MeetHourViewDelegate {
       }
   }
 
-  @objc func enterPictureInPicture() {
+  // Declared bare, Swift exported this as `enterPictureInPicture` with no
+  // argument, which never matched the protocol's `enterPictureInPicture:`.
+  // `respondsToSelector:` therefore returned false and the SDK defaulted the
+  // `pip.enabled` feature flag off, disabling the in-conference PiP control on
+  // this path too. The requirement imports as `enterPicture(inPicture:)`;
+  // the selector is pinned so it cannot drift again.
+  @objc(enterPictureInPicture:)
+  func enterPicture(inPicture data: [AnyHashable : Any]!) {
     DispatchQueue.main.async {
         self.pipViewCoordinator?.show()
         self.pipViewCoordinator?.enterPictureInPicture()
