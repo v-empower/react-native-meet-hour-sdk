@@ -5,7 +5,7 @@ Meet Hour Example project for React Native with APIs
 [Meet Hour - HD Quality free video conference solution](https://meethour.io)
 Meet Hour offers HD video conference solution with End to End Encrypted and many other features such as lobby mode, Donor box & Click&Pledge Connect for fundraising, Video call recording, Youtube Live Stream etc.
 
-### NPM package (Latest version - 3.0.45)
+### NPM package (Latest version - 3.0.46)
 
 ```
 https://www.npmjs.com/package/react-native-meet-hour-sdk
